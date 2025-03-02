@@ -31,28 +31,19 @@
 
     <script>
       function add() {
-    // Obtener los valores de los inputs y convertirlos a números
     const num1 = parseFloat(document.getElementById("num1").value) || 0;
     const num2 = parseFloat(document.getElementById("num2").value) || 0;
-
-    // Calcular la suma
     let result = num1 + num2;
-
-    // Mostrar el resultado
     document.getElementById("result").innerText = "Result: " + result.toFixed(2);
 }
 
 function substraction() {
-    // Obtener los valores de los inputs y convertirlos a números
     const num1 = parseFloat(document.getElementById("num1").value) || 0;
     const num2 = parseFloat(document.getElementById("num2").value) || 0;
-
-    // Calcular la suma
-    let result = Math.min(num1 + num2, 0);
-
-    // Mostrar el resultado
-    document.getElementById("result").innerText = "Result: " + result.toFixed(2);
+    let result = num1 - num2; // CORREGIDO
+    document.getElementById("result").innerText = result;
 }
+
 
 function resetFields() {
     document.getElementById("num1").value = "";

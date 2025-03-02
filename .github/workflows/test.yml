@@ -1,6 +1,13 @@
 name: Run Tests
 
-on: [push, pull_request] # Runs on push and PRs
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 
 jobs:
   test:

@@ -37,7 +37,7 @@ describe('Prueba de UI con Selenium', function () {
 
         await driver.findElement(By.css("button")).click();
 
-        const resultado = await driver.findElement(By.id("resultado")).getText();
+        const resultado = await driver.findElement(By.id("result")).getText();
         assert.strictEqual(resultado, "8");
     });
 });

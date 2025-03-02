@@ -1,0 +1,22 @@
+name: Run Tests
+
+on: [push, pull_request] # Runs on push and PRs
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18 # Adjust based on your project
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test # Or the appropriate test command (e.g., npm run test)

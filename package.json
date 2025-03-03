@@ -4,11 +4,10 @@
   "description": "calculator practice Thursday 7:22 am 13 Feb",
   "main": "index.js",
   "scripts": {
-  "start": "node index.js", 
-  "test": "start-server-and-test start http://localhost:8000 test:run",
-  "test:run": "mocha test/test1.js --timeout 30000"
-}
-,
+    "start": "node index.js",
+    "test": "start-server-and-test start http://localhost:8000 test:run",
+    "test:run": "mocha test/test1.js --timeout 30000"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,7 +16,8 @@
     "chromedriver": "^133.0.2",
     "fs": "^0.0.1-security",
     "mocha": "^11.1.0",
-    "selenium-webdriver": "^4.29.0"
+    "selenium-webdriver": "^4.29.0",
+    "start-server-and-test": "^2.0.10"
   },
   "dependencies": {
     "express": "^4.21.2"

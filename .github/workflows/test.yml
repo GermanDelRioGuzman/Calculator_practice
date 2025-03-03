@@ -25,5 +25,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+        - name: Install Chrome for Selenium
+        run: |
+          sudo apt update
+          sudo apt install -y google-chrome-stable
+
       - name: Run tests
         run: npm test # Or the appropriate test command (e.g., npm run test)

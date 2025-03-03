@@ -32,3 +32,6 @@ jobs:
 
       - name: Run tests
         run: npm test # Or the appropriate test command (e.g., npm run test)
+
+        name: Install Selenium WebDriver
+        run: npm install selenium-webdriver

@@ -34,3 +34,6 @@ jobs:
 
       - name: Run tests
         run: npm test  # Or the appropriate test command (e.g., npm run test)
+      
+      - name: Install start-server-and-test
+        run: npm install --save-dev start-server-and-test
